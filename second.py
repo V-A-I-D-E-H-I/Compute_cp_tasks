@@ -1,4 +1,6 @@
+print("Input string a")
 a=str(input())
+print("Input string b")
 b=str(input())
 l1=list(a)
 l2=list(b)
