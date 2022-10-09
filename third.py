@@ -1,8 +1,5 @@
 def main(n,perm):
     
-    if(len(perm)!=n):
-        print("you have entered incorrect no of values, try again")
-        return 0
     if(n==1):
         print("-1")
         return 0
@@ -18,7 +15,7 @@ def main(n,perm):
     while (i<n-1):
         if(sl[i]!=perm[i]):
             fl.append(sl[i])
-            print(sl[i], "from 1")
+            #print(sl[i], "from 1")
             i+=1
         else:
             fl.append(sl[i+1])
@@ -39,9 +36,9 @@ def main(n,perm):
     print(fl)
     return 0
         
-    
+print("Enter n")    
 n=int(input())
-#input the permuation without any commas or spaces
-p=list(input())
-perm=list(map(int, p))
+print("Input the permutation using spaces: ")
+perm = [int(x) for x in input().split()]
+
 main(n,perm)
